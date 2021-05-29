@@ -3966,7 +3966,7 @@ object ARMenu: TARMenu
     Width = 800
     Height = 41
     Align = alTop
-    Caption = 'VERSION-033021E'
+    Caption = 'VERSION-041021E'
     Color = clBackground
     Font.Charset = ANSI_CHARSET
     Font.Color = clWhite
@@ -3980,7 +3980,7 @@ object ARMenu: TARMenu
     Left = 0
     Top = 41
     Width = 800
-    Height = 294
+    Height = 295
     Align = alClient
     Color = clWhite
     Font.Charset = ANSI_CHARSET
@@ -4019,7 +4019,7 @@ object ARMenu: TARMenu
   end
   object Panel3: TPanel
     Left = 0
-    Top = 335
+    Top = 336
     Width = 800
     Height = 41
     Align = alBottom
