@@ -1,0 +1,113 @@
+unit pARData;
+
+interface
+
+uses
+  SysUtils, Classes, DB, DBTables, ADODB, BaseDataSet, MsSqlQuery,
+  BaseConnect, MsSqlCon, BaseTransact, MsSqlTrans;
+
+type
+  Tdmardata = class(TDataModule)
+    dsCustomer: TDataSource;
+    dsStock: TDataSource;
+    dsreusable1: TDataSource;
+    qryreusable1a: TQuery;
+    dspodet: TDataSource;
+    dspohd: TDataSource;
+    dssaledet: TDataSource;
+    dsPayCusHd: TDataSource;
+    dssalehd: TDataSource;
+    dsAdjDet: TDataSource;
+    dsTaxAdj: TDataSource;
+    dslistrec: TDataSource;
+    qryListRec1: TQuery;
+    tcustomer: TTable;
+    dsKey: TDataSource;
+    tCurrency: TTable;
+    dsCurrency: TDataSource;
+    dsTraNType: TDataSource;
+    dsCompany: TDataSource;
+    dsSource: TDataSource;
+    qrySource1: TQuery;
+    dsFormSettings: TDataSource;
+    dsSrcDet: TDataSource;
+    qrySrcDet: TQuery;
+    ARServer1: TADOConnection;
+    qryEmployee: TADOQuery;
+    dsEmployee: TDataSource;
+    dsDest1: TDataSource;
+    qryDest1: TADOQuery;
+    qryCompany1: TADOQuery;
+    drCompany1: TDataSource;
+    qryFormSettings1: TADOQuery;
+    dsFormSettings1: TDataSource;
+    qryForm: TADOQuery;
+    dsForm: TDataSource;
+    qrySaleDet1: TADOQuery;
+    dsSaleDet1: TDataSource;
+    qrySalehd1: TADOQuery;
+    dsSaleHd1: TDataSource;
+    dsUsable1: TDataSource;
+    MSSQLDatabase1: TMSSQLDatabase;
+    qryUsable1: TMSSQLQuery;
+    ARServer: TMSSQLDatabase;
+    MSSQLTransact1: TMSSQLTransact;
+    qryDest: TMSSQLQuery;
+    dsDest: TDataSource;
+    qryPODet: TMSSQLQuery;
+    qryProduct: TMSSQLQuery;
+    qryCustomer: TMSSQLQuery;
+    qryPOhd: TMSSQLQuery;
+    qryStock: TMSSQLQuery;
+    qryCurrency: TMSSQLQuery;
+    qryKey: TMSSQLQuery;
+    qryTranType: TMSSQLQuery;
+    qryFormSettings: TMSSQLQuery;
+    qryCompany: TMSSQLQuery;
+    qrySalehd: TMSSQLQuery;
+    qrySaledet: TMSSQLQuery;
+    qryPayCusHd: TMSSQLQuery;
+    qryPayCust: TMSSQLQuery;
+    dsPayCust: TDataSource;
+    qryAdjDet: TMSSQLQuery;
+    qryTaxAdj: TMSSQLQuery;
+    qryreusable1: TMSSQLQuery;
+    qrySource: TQuery;
+    qryListRec: TMSSQLQuery;
+    qryListForm: TMSSQLQuery;
+    dsListform: TDataSource;
+    qryreusable2: TMSSQLQuery;
+    dsReusable2: TDataSource;
+    procedure DataModuleCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  dmardata: Tdmardata;
+
+implementation
+
+uses pSelComp;
+
+{$R *.dfm}
+
+procedure Tdmardata.DataModuleCreate(Sender: TObject);
+var value : integer;
+begin
+    try
+              ARServer.Database  := SelComp.cDatabase;
+              ARServer.Host      := SelComp.cServer;
+              ARServer.password  := SelComp.cPassWord;
+              ARServer.connected := true;
+    except
+         on EZeroDivide do Value  := MAXINT;
+         on EIntOverflow do Value := 0;
+    end;
+
+end;
+
+end.
+

@@ -1,0 +1,60 @@
+package myDbware7;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'My Database Object Dbware Components'}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  designide,
+  dbrtl,
+  vcldb,
+  vcl,
+  vclactnband,
+  vclx,
+  visualclx,
+  bdertl,
+  visualdbclx,
+  myCommon7;
+
+contains
+  BaseUpdateSql in 'BaseUpdateSql.pas',
+  BaseConnect in 'BaseConnect.pas',
+  BaseConst in 'BaseConst.pas',
+  BaseDataSet in 'BaseDataSet.pas',
+  BaseDirectSql in 'BaseDirectSql.pas',
+  BaseLinkProp in 'BaseLinkProp.pas' {frmLinkFields},
+  BaseProperty in 'BaseProperty.pas',
+  BaseReg in 'BaseReg.pas',
+  BaseSqlBuffer in 'BaseSqlBuffer.pas',
+  BaseSqlExtra in 'BaseSqlExtra.pas',
+  BaseSqlItems in 'BaseSqlItems.pas',
+  BaseSqlParser in 'BaseSqlParser.pas',
+  BaseSqlScanner in 'BaseSqlScanner.pas',
+  BaseSqlScript in 'BaseSqlScript.pas',
+  BaseSqlTypes in 'BaseSqlTypes.pas',
+  BaseTransact in 'BaseTransact.pas',
+  BaseBlobStream in 'BaseBlobStream.pas';
+
+end.

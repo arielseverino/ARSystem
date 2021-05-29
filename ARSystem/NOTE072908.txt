@@ -1,0 +1,34 @@
+G:\OTHERFIL\MYPROJ\surtech\
+
+22133-21124
+
+
+
+              if (cTranCode = '002') then        {dayoff}
+              begin
+                   if (nAOThrs = 0) then      {Not Filed}
+                   begin
+                        nRegHrs    := 0;
+                        nRegOTHrs  := 0;
+                        nRegNDHrs  := 0;
+                        nRegOTHrs  := 0;
+                        nLateHrs   := 0;
+                        nUndertime := 0;
+                   end
+                   else                          {Filed}
+                   begin
+                        if ((nRegOTHrs > 0) and (nRegHrs < nMaxRegHrs))  then  {Has OT & Reg. Hrs is less than Max. Reg. Hrs.}
+                        begin
+                             if ((nRegHrs + nRegOTHrs) > nMaxRegHrs) then      {if OT is Added to Reg Hrs More than Max. Reg. Hrs}
+                             begin
+                                  nRegOTHrs := (nRegHrs + nRegOThrs) - nMaxRegHrs;
+                                  nRegHrs   := nMaxRegHrs;
+                             end
+                             else {Total Reg. Hrs and OT Hrs is less than or equal max reg. hrs}
+                             begin
+                                  nRegHrs   := nRegHrs + nRegOThrs;
+                                  nRegOTHrs := 0;
+                             end;
+                        end
+                   end;
+              end;

@@ -1,0 +1,499 @@
+object UPDPAYHD: TUPDPAYHD
+  Left = 174
+  Top = 154
+  Width = 615
+  Height = 451
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 599
+    Height = 41
+    Align = alTop
+    BevelInner = bvLowered
+    BevelOuter = bvLowered
+    Caption = 'PAYMENT HEADER RECORD'
+    Color = clActiveCaption
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clAqua
+    Font.Height = -19
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 41
+    Width = 599
+    Height = 331
+    Align = alClient
+    Color = clWhite
+    TabOrder = 1
+    object Label15: TLabel
+      Left = 16
+      Top = 235
+      Width = 73
+      Height = 13
+      Caption = 'Search OR No.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlue
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object GroupBox1: TGroupBox
+      Left = 355
+      Top = 136
+      Width = 244
+      Height = 185
+      Color = clSkyBlue
+      ParentColor = False
+      TabOrder = 0
+      object Label9: TLabel
+        Left = 13
+        Top = 15
+        Width = 106
+        Height = 16
+        Alignment = taRightJustify
+        Caption = 'Invoice Amount'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -13
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label10: TLabel
+        Left = 5
+        Top = 54
+        Width = 114
+        Height = 16
+        Alignment = taRightJustify
+        Caption = 'CM / DM Amount'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -13
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label11: TLabel
+        Left = 37
+        Top = 93
+        Width = 82
+        Height = 16
+        Alignment = taRightJustify
+        Caption = 'Tax Amount'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -13
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label13: TLabel
+        Left = 41
+        Top = 146
+        Width = 78
+        Height = 16
+        Alignment = taRightJustify
+        Caption = 'Check Amt.'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -13
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object DBText1: TDBText
+        Left = 129
+        Top = 15
+        Width = 100
+        Height = 17
+        Color = clActiveCaption
+        DataField = 'InvAmt'
+        DataSource = dmardata.dsPayCusHd
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -13
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object DBText2: TDBText
+        Left = 129
+        Top = 54
+        Width = 100
+        Height = 17
+        Color = clActiveCaption
+        DataField = 'AdjAmt'
+        DataSource = dmardata.dsPayCusHd
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -13
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object DBText3: TDBText
+        Left = 129
+        Top = 93
+        Width = 100
+        Height = 17
+        Color = clActiveCaption
+        DataField = 'TaxAmt'
+        DataSource = dmardata.dsPayCusHd
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -13
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object DBText5: TDBText
+        Left = 129
+        Top = 146
+        Width = 100
+        Height = 17
+        Color = clActiveCaption
+        DataField = 'CheckAmt'
+        DataSource = dmardata.dsPayCusHd
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -13
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object Shape1: TShape
+        Left = 2
+        Top = 124
+        Width = 241
+        Height = 1
+        Pen.Color = clWhite
+      end
+    end
+    object gbHead: TGroupBox
+      Left = 8
+      Top = 5
+      Width = 593
+      Height = 127
+      Enabled = False
+      TabOrder = 1
+      object Label1: TLabel
+        Left = 32
+        Top = 15
+        Width = 36
+        Height = 13
+        Alignment = taRightJustify
+        Caption = 'OR No.'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+      end
+      object Label2: TLabel
+        Left = 388
+        Top = 15
+        Width = 67
+        Height = 13
+        Alignment = taRightJustify
+        Caption = 'Payment Date'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+      end
+      object Label3: TLabel
+        Left = 16
+        Top = 40
+        Width = 52
+        Height = 13
+        Alignment = taRightJustify
+        Caption = 'Cust. Code'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+      end
+      object Label4: TLabel
+        Left = 204
+        Top = 40
+        Width = 55
+        Height = 13
+        Caption = 'Cust. Name'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+      end
+      object Label5: TLabel
+        Left = 4
+        Top = 65
+        Width = 64
+        Height = 13
+        Alignment = taRightJustify
+        Caption = 'Bank/Branch'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+      end
+      object Label6: TLabel
+        Left = 17
+        Top = 90
+        Width = 51
+        Height = 13
+        Alignment = taRightJustify
+        Caption = 'Check No.'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+      end
+      object dbeORno: TDBEdit
+        Left = 73
+        Top = 23
+        Width = 120
+        Height = 21
+        DataField = 'ORNO'
+        DataSource = dmardata.dsPayCusHd
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+        OnExit = dbeORnoExit
+      end
+      object dbedrdate: TDBEdit
+        Left = 464
+        Top = 15
+        Width = 121
+        Height = 21
+        DataField = 'PayDate'
+        DataSource = dmardata.dsPayCusHd
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+      end
+      object DBEdit3: TDBEdit
+        Left = 72
+        Top = 40
+        Width = 120
+        Height = 21
+        DataField = 'CustCode'
+        DataSource = dmardata.dsPayCusHd
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 2
+      end
+      object DBLookupComboBox1: TDBLookupComboBox
+        Left = 268
+        Top = 40
+        Width = 317
+        Height = 21
+        DataField = 'CustCode'
+        DataSource = dmardata.dsPayCusHd
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        KeyField = 'custcode'
+        ListField = 'custname'
+        ListSource = dmardata.dsCustomer
+        ParentFont = False
+        TabOrder = 3
+      end
+      object DBEdit4: TDBEdit
+        Left = 72
+        Top = 65
+        Width = 120
+        Height = 21
+        DataField = 'Bank'
+        DataSource = dmardata.dsPayCusHd
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 4
+      end
+      object DBEdit6: TDBEdit
+        Left = 72
+        Top = 90
+        Width = 120
+        Height = 21
+        DataField = 'CheckNo'
+        DataSource = dmardata.dsPayCusHd
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlue
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 5
+        OnChange = CompDueDate
+        OnExit = CompDueDate
+      end
+    end
+    object edkey: TEdit
+      Left = 20
+      Top = 255
+      Width = 325
+      Height = 21
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlue
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+      OnChange = edkeyChange
+    end
+  end
+  object Panel3: TPanel
+    Left = 0
+    Top = 372
+    Width = 599
+    Height = 41
+    Align = alBottom
+    Color = clActiveCaption
+    TabOrder = 2
+    object NextBtn: TButton
+      Left = 64
+      Top = 8
+      Width = 50
+      Height = 25
+      Caption = '&Next '
+      TabOrder = 0
+      OnClick = NextBtnClick
+      OnKeyDown = NextRec
+    end
+    object PrevBtn: TButton
+      Left = 7
+      Top = 8
+      Width = 50
+      Height = 25
+      Caption = '&Prior'
+      TabOrder = 1
+      OnClick = PrevBtnClick
+      OnKeyDown = PrevBtnKeyDown
+    end
+    object AddBtn: TButton
+      Left = 126
+      Top = 8
+      Width = 50
+      Height = 25
+      Caption = '&Add'
+      TabOrder = 2
+      OnClick = AddBtnClick
+    end
+    object EditBtn: TButton
+      Left = 182
+      Top = 8
+      Width = 50
+      Height = 25
+      Caption = '&Edit'
+      TabOrder = 3
+      OnClick = EditBtnClick
+    end
+    object DelBtn: TButton
+      Left = 238
+      Top = 8
+      Width = 50
+      Height = 25
+      Caption = '&Delete'
+      TabOrder = 4
+      OnClick = DelBtnClick
+    end
+    object BrowseBtn: TButton
+      Left = 413
+      Top = 8
+      Width = 50
+      Height = 25
+      Caption = '&Browse'
+      TabOrder = 5
+      OnClick = BrowseBtnClick
+    end
+    object DetBtn: TButton
+      Left = 469
+      Top = 8
+      Width = 50
+      Height = 25
+      Caption = 'De&tail'
+      TabOrder = 6
+      OnClick = DetBtnClick
+    end
+    object CloseBtn: TButton
+      Left = 548
+      Top = 8
+      Width = 50
+      Height = 25
+      Caption = '&Close'
+      ModalResult = 1
+      TabOrder = 7
+    end
+    object cmdmbtn: TButton
+      Left = 296
+      Top = 8
+      Width = 50
+      Height = 25
+      Caption = 'CM/DM'
+      TabOrder = 8
+      OnClick = cmdmbtnClick
+    end
+    object ewtbtn: TButton
+      Left = 352
+      Top = 8
+      Width = 50
+      Height = 25
+      Caption = 'E&WT'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -9
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 9
+      OnClick = ewtbtnClick
+    end
+  end
+end

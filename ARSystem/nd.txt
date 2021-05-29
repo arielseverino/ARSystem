@@ -1,0 +1,5 @@
+--   Insert into tmpOTRegister (IDNUm,RatePerDay,OTHrs,DotHrs,DoteHrs,RhotHrs,RhoteHrs,ShotHrs,ShoteHrs,DotRhotHrs,DotRhoteHrs,DotShotHrs,DotShoteHrs,
+--	            NDRegHrs,NDOTHrs,NDDotHrs,NDDoteHrs,NDRhotHrs,NDRhoteHrs,NDShotHrs,NDSHoteHrs,NDDotRhotHrs,NDDotRhoteHrs,NDDotShotHrs,NDDotShoteHrs) 
+--  			     Select IDNUm,RatePerDay,OTHrs,DotHrs,DoteHrs,RhotHrs,RhoteHrs,ShotHrs,ShoteHrs,DotRhotHrs,DotRhoteHrs,DotShotHrs,DotShoteHrs,
+--	            NDRegHrs,NDOTHrs,NDDotHrs,NDDoteHrs,NDRhotHrs,NDRhoteHrs,NDShotHrs,NDSHoteHrs,NDDotRhotHrs,NDDotRhoteHrs,NDDotShotHrs,NDDotShoteHrs
+--                            from #tmpReg02

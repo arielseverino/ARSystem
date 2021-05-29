@@ -1,0 +1,14 @@
+
+
+   
+
+
+     CUSTOMERNAME1                                       DATE
+     TIN                                                 DRNO
+     ADDRESS                                             PONUMBER
+
+         CUSTOMERNAME2
+
+
+     
+     QTY1    UNIT1    PRODCODE1    PRODNAME1   CURRENT1   UNITPRICE1   TOTALPRICE1

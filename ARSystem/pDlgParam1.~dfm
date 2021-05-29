@@ -1,0 +1,48 @@
+object Dlgparam1: TDlgparam1
+  Left = 215
+  Top = 173
+  BorderStyle = bsDialog
+  ClientHeight = 107
+  ClientWidth = 272
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object rgDRFormType: TRadioGroup
+    Left = 0
+    Top = 0
+    Width = 272
+    Height = 107
+    Align = alClient
+    Color = clSkyBlue
+    ItemIndex = 0
+    Items.Strings = (
+      'Sales Invoice'
+      'Delivery Receipt')
+    ParentColor = False
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 184
+    Top = 40
+    Width = 75
+    Height = 25
+    Caption = '&Ok'
+    ModalResult = 1
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 184
+    Top = 72
+    Width = 75
+    Height = 25
+    Caption = '&Cancel'
+    ModalResult = 2
+    TabOrder = 2
+  end
+end
