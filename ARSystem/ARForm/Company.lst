@@ -1,0 +1,5 @@
+SERVER - 1 ;Smart1.ini
+LOCAL  - 2 ;Harbor2.ini
+HCPTI  - 3 ;Harbor3.ini 
+HOME   - 4 ;Harbor4.ini
+Test   - 5 ;Smart2.ini
